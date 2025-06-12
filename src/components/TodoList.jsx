@@ -31,10 +31,11 @@ export function TodoList() {
             <button onClick={() => agregarTarea()}>
                 Agregar Tarea
             </button>
+            
             <button onClick={() => borrarTarea()}>
                 Borrar
             </button>
-
+                <p>Si necesitas borrar la tarea escribe el nombre de la tarea que deseas borrar</p>
             <ul>
                 {tareas.map((tarea, index) => (
                     <li key={index}>{tarea}</li>
